@@ -1,11 +1,11 @@
 /**
  * 
  */
-package thrift;
+package thrift.service;
 
 import org.apache.thrift.TException;
 
-import thrift.pojo.HelloWorldService.Iface;
+import thrift.service.HelloWorldService.Iface;
 
 public class HelloWorldImpl implements Iface {
 

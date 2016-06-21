@@ -1,7 +1,7 @@
 /**
  * 
  */
-package thrift;
+package thrift.rpc.simple;
 
 import org.apache.thrift.TProcessor;
 import org.apache.thrift.protocol.TBinaryProtocol;
@@ -9,7 +9,8 @@ import org.apache.thrift.server.TServer;
 import org.apache.thrift.server.TSimpleServer;
 import org.apache.thrift.transport.TServerSocket;
 
-import thrift.pojo.HelloWorldService;
+import thrift.service.HelloWorldImpl;
+import thrift.service.HelloWorldService;
 
 /**
  * blog http://www.micmiu.com

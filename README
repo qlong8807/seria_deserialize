@@ -15,3 +15,4 @@ java -jar F:/path/avro-tools-1.7.4.jar compile schema user.avsc .
 thrift:
 生成接口命令：
 thrift-0.9.1.exe -r -gen java hello.thrift
+thrift RPC 有多种方式，主要分为阻塞/非阻塞IO 可以参考http://www.micmiu.com/soa/rpc/thrift-sample/

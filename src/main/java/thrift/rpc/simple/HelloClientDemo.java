@@ -1,7 +1,7 @@
 /**
  * 
  */
-package thrift;
+package thrift.rpc.simple;
 
 import org.apache.thrift.TException;
 import org.apache.thrift.protocol.TBinaryProtocol;
@@ -10,7 +10,8 @@ import org.apache.thrift.transport.TSocket;
 import org.apache.thrift.transport.TTransport;
 import org.apache.thrift.transport.TTransportException;
 
-import thrift.pojo.HelloWorldService;
+import thrift.service.HelloWorldService;
+
 
 /**
  * blog http://www.micmiu.com
