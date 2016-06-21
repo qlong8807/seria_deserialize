@@ -11,3 +11,7 @@ avro:
 user.avsc中必须包含namespace，否则创建SpecificDatumWriter的时候会报异常：NullPointerException
 下面的命令在user.avsc的目录执行，会在user.avsc的目录下生成java文件
 java -jar F:/path/avro-tools-1.7.4.jar compile schema user.avsc .
+
+thrift:
+生成接口命令：
+thrift-0.9.1.exe -r -gen java hello.thrift
