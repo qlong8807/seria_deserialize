@@ -27,5 +27,40 @@
 			<artifactId>kryo</artifactId>
 			<version>2.24.0</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.apache.avro</groupId>
+			<artifactId>avro</artifactId>
+			<version>1.8.0</version>
+		</dependency>
 	</dependencies>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.avro</groupId>
+					<artifactId>avro-maven-plugin</artifactId>
+					<version>1.8.0</version>
+					<executions>
+						<execution>
+							<id>schemas</id>
+							<phase>generate-sources</phase>
+							<goals>
+								<goal>schema</goal>
+							</goals>
+							<configuration>
+								<includes>
+									<include>stringPair.avsc</include>
+								</includes>
+								<sourceDirectory>src/main/resources</sourceDirectory>
+								<outputDirectory>${project.build.directory}/generated-sources/java</outputDirectory>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
 </project>

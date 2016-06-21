@@ -5,3 +5,9 @@ java:序列化/反序列化/总耗时：1934 ---- 3619 === 5553---1
 kryo:序列化/反序列化/总耗时：982 ---- 778 === 1760---1
 
 protostuff还可以按照protobuf的配置序列化成json/yaml/xml等格式。
+
+
+avro:
+user.avsc中必须包含namespace，否则创建SpecificDatumWriter的时候会报异常：NullPointerException
+下面的命令在user.avsc的目录执行，会在user.avsc的目录下生成java文件
+java -jar F:/path/avro-tools-1.7.4.jar compile schema user.avsc .
